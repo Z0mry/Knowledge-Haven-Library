@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Knowledge Haven Library</title>
+   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/main.css">
+
+
+
+  </head>
+  <header>
+    <h1 class="h11">Knowledge Haven Library</h1>
+    <nav>
+    </nav>
+  </header>
+  <body>
+    <h1><%= bookInfo.title %></h1>
+    <p>Authors: <%= bookInfo.authors %></p>
+    <p>Publish Date: <%= bookInfo.publishDate %></p>
+    <img src="<%= bookInfo.coverURL %>" alt="Book Cover">
+    <p>Google Books URL: <a href="<%= bookInfo.googleBooksURL %>" target="_blank"><%= bookInfo.googleBooksURL %></a></p>
+    <button onclick="refreshPage()">New Book</button>
+    <script>
+      function refreshPage() {
+        window.location.reload();
+      }
+    </script>
+     <footer>
+    
+      <p>Follow us on: <a href="https://www.facebook.com/www.bavaria/" target="_blank">Facebook</a> | <a href="https://twitter.com/?lang=en" target="_blank">Twitter</a></p>
+      <p>&copy; 2024  All rights reserved. | <a href="#">Privacy Policy</a></p>
+
+    </footer>
+  </body>
+</html>
